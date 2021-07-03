@@ -1,0 +1,49 @@
+
+body {
+    min-height: 100%;
+    background-color: rgb(237, 239, 242);
+    font-family: "Open Sans", sans-serif;
+    color: rgb(106, 133, 156);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+}
+.text-block {
+
+    color: #192024;
+}
+.w-container .w-row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.w-col-4 {
+    width: 33.33333333%;
+}
+.w-col {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.white-box {
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(220, 235, 247);
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+.italic-text {
+    color: #fc7d64;
+    font-size: 16px;
+}
+
+
+

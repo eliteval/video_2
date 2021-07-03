@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>SSE EventSource Example by Woolha</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/event-source-polyfill/0.0.9/  eventsource.min.js"></script>
+  <script>
+    const es = new EventSource('http://localhost:3000/api/v1/provider/patients-waiting/testroom2');
+
+    const listener = function (event) {
+      console.log("event");
+      console.log(event);
+    };
+    es.addEventListener('time', listener);
+    es.addEventListener('open', listener);
+    es.addEventListener('message', listener);
+    es.addEventListener('error', function (event) {
+      console.log("event error");
+      console.log(event);
+      console.log(event.header.location);
+      // es.close();
+    });
+    es.addEventListener('result', listener);
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
